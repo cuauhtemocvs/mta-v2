@@ -1,0 +1,264 @@
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./../../assets/logos/contable.png"
+            height="50"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-controls="#picker-editor" [routerLink]="['']">
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-controls="#picker-editor" (click)="scrollToElement(quienesSomos)">
+              ¿Quiénes somos?
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-controls="#picker-editor" (click)="scrollToElement(servicios)">
+              Servicios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-controls="#picker-editor" (click)="scrollToElement(contacto)">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <a
+          class="btn text-white btn-floating"
+          href="https://www.facebook.com/Mendoza-Toledo-y-Asociados-1381805795169937"
+          role="button"
+          style="background-color: #3b5998;"
+          mdbRipple
+          >
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+    <div class="banner">
+      <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+        <mdb-carousel-item>
+          <img
+            src="./../../assets/banner/asesoria.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Asesoría</h5>
+            <p>Te ayudamos a crecer tu empresa con los profesionistas más preparados en los ámbitos jurídico, contable, fiscal y arquitectónico.</p>
+          </div>
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img
+            src="./../../assets/banner/slide-11.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Soluciones</h5>
+            <p>Atendemos los problemas de tu empresa para apoyarla en su crecimiento.</p>
+          </div>
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img
+            src="./../../assets/banner/slide-3_0.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Confianza</h5>
+            <p>Somos un corporativo mexicano con 13 años de experiencia, nuestro compromiso es superar expectativas</p>
+          </div>
+        </mdb-carousel-item>
+      </mdb-carousel>
+    </div>
+  
+    <!-- Container for demo purpose -->
+<div class="container my-5 py-5" >
+
+    <!-- Section: Design Block -->
+    <section class="" #quienesSomos>
+      <style>
+        @media (min-width: 992px) {
+          #cta-img-nml-50 {
+            margin-left: 50px;
+          }
+        }
+      </style>
+  
+      <div class="row gx-0">
+        <div class="col-lg-5 mb-4 mb-md-0">
+          <div class="d-flex py-md-5">
+            <img
+                 src="./../../assets/contable/126-1.jpg"
+                 class="w-100 rounded-5 shadow-3-strong"
+                 id="cta-img-nml-50"
+                 style="z-index: 10"
+                 alt=""
+                 />
+          </div>
+        </div>
+  
+        <div class="col-lg-7 mb-4 mb-md-0">
+          <div
+               class="back-contable h-100 rounded-6 p-4 ps-lg-5 text-white d-flex align-items-center"
+               >
+            <div class="ps-lg-5">
+              <h1 class="fw-bold mb-4">Contabilidad</h1>
+                <h3>Contabilidad en el concepto más amplio se define como:</h3>
+                <p>Control y registro de los ingresos, compras, gastos y demás operaciones económicas que realiza una
+                    empresa o entidad.</p>
+                <p>En la actualidad, de forma remota nos encargamos de: clasificar, registrar, e informar sobre las
+                    operaciones cuantificables y no cuantificables en dinero realizadas por un ente económico (Persona
+                    Física o Moral), para preparar información Financiera con sirva para asesorarlos a tomar las mejores
+                    decisiones para su negocio.&nbsp;</p>
+                <h3>VISIÓN:</h3>
+                <p>Ser el asesor de negocios en la profesión contable más buscado por su calidad, actualización,
+                    adaptabilidad y asertividad&nbsp; en los servicios prestados, mediante la capacitación constante de
+                    sus recursos humanos, así como el aprovechamiento de tecnología de ultima generación, reconocidos
+                    por nuestra calidez y empatía con nuestros clientes.</p>
+                <h3>MISIÓN:</h3>
+                <p>Ser los asesores de negocios dedicados a superar las expectativas de nuestros clientes; coadyuvamos
+                    al crecimiento de estos, abasteciéndolos de soluciones eficientes y eficaces en nuestro campo de
+                    acción.&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Container for demo purpose -->
+<!-- Container for demo purpose only -->
+<div class="gris">
+
+ <div class="container my-5 py-5 servicios" #servicios >
+    <section class="text-center">
+
+      <h3 class="mb-5">Servicios</h3>
+    
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-search"></i>
+          </div>
+          <p class="h5">Auditoria</p>
+          <hr class="hr" />
+            <p class="descripcion">
+              En los  servicios de Auditoría, nos ocupamos  en comprender con precisión las operaciones de nuestros clientes, con base en ello logramos  aconsejarles respecto de los cambios en la normatividad contable y fiscal, con la clara intención de ayudarlos a conseguir los mejores resultados financieros.
+            </p>
+          <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init (click)="openModal('auditoria')">Leer más</button>
+        </div>
+  
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-gavel"></i>
+          </div>
+          <p class="h5">Peritajes Contables</p>
+          <hr class="hr" />
+          <p class="descripcion">Nuestros expertos en el área desarrollan peritajes para efectos legales en coordinación con los asesores legales de nuestros clientes.</p>
+        </div>
+  
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-university"></i>
+          </div>
+          <p class="h5">Fiscales</p>
+          <hr class="hr" />
+          <p class="descripcion">Las leyes fiscales en México están en constante cambio, así como el incremento de la fiscalización hacia los contribuyentes, sin la asesoría adecuada se pueden tener problemas con las autoridades fiscales, derivado de esto, nos enfocamos en comprender a la perfección la situación fiscal de cada uno de nuestros clientes, de esta forma podemos ofrecer diversos servicios, que maximicen los recursos de nuestros clientes.</p>
+          <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init (click)="openModal('fiscales')">Leer más</button>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-home"></i>
+          </div>
+          <p class="h5">Defensa contenciosa administrativa y fiscal contra requerimiento y multas del INFONAVIT</p>
+          <hr class="hr" />
+          <p class="descripcion">Significa que si eres patrón y estás obligado a la retención de las aportaciones del 5% del salario de los trabajadores y el INFONAVIT te notifica una determinación fiscal por omisiones en las aportaciones fiscales estás en posibilidad de defenderte y solicitar la nulidad de esa determinación fiscal.</p>
+        </div>
+  
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <p class="h5">Servicios Contables y Fiscales</p>
+          <hr class="hr" />
+          <p class="descripcion">Enfocados en todos los cambios en el ámbito fiscal y contable, así como los nuevos procesos de fiscalización que las autorizadas actualmente ejercen sobre los contribuyentes, nuestras áreas contables y fiscales se enfocan en asesorar a nuestros clientes para que cada uno de ellos cumpla a cabalidad en tiempo y forma con sus obligaciones fiscales y contables; de esta forma también los accionistas o personas físicas obtengan información financiera de calidad, así como, que se encuentren tranquilos  en el exacto cumplimiento de sus obligaciones.</p>
+          <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init (click)="openModal('contables')">Leer más</button>
+        </div>
+      </div>
+  
+    </section>
+  </div>
+</div>
+<div class="container my-5 py-5" #contacto>
+
+    <!-- Section: Design Block -->
+    <section class="">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="mb-5 pb-3">Contacto</h3>
+        </div>
+      </div>
+      <div class="row gx-md-5">
+        <div class="col-md-6 col-xl-5 position-relative ms-auto">
+          <div class="pane-content">
+            <p>No hay nada más importante para nosotros que nuestros clientes, estamos a su servicio.</p>
+            <p>Mendoza Toledo y Asociados<br>
+              Dirección 1: <br><br>
+              Avenida 5, No.319 planta alta, Granjas San Antonio, Ciudad de México<br>
+              09070 Ciudad de México, CDMX<br>
+              <br><br>
+              Dirección 2: <br><br>
+              B. Gabón 77, Bosques de Aragon, Nezahualcóyotl<br>
+              57170 Nezahualcóyotl, MEX
+            </p>
+            <p>Teléfono: <a href="tel:+525557940696">57940696</a><br><br>
+              E-mail: <a href="contacto@corporativo-mta.com"></a></p>
+          </div>
+          <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+        </div>
+        <div class="col-md-6 col-xl-5 position-relative me-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-outline" data-mdb-input-init>
+                <input type="text" id="nombre" class="form-control mb-4" />
+                <label class="form-label" for="nombre">Nombre</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-outline" data-mdb-input-init>
+                <input type="email" id="email" class="form-control mb-4" />
+                <label class="form-label" for="email">Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-outline mb-4" data-mdb-input-init>
+            <textarea class="form-control" id="mensaje" rows="4"></textarea>
+            <label class="form-label" for="mensaje">Mensaje</label>
+          </div>
+          <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init>Enviar</button>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Container for demo purpose only -->

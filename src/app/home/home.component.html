@@ -1,0 +1,131 @@
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./../../assets/logo.png"
+          height="50"
+          alt=""
+          loading="lazy"
+        />
+      </a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" [routerLink]="['/arquitectura']">
+            <img src="./../../assets/botones/m_arquis.png" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" [routerLink]="['/contable']">
+          <img src="./../../assets/botones/m_conta.png" alt="">
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" [routerLink]="['/juridico']">
+          <img src="./../../assets/botones/m_juri.png" alt="">
+        </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center">
+      <a
+        class="btn text-white btn-floating"
+        href="https://www.facebook.com/Mendoza-Toledo-y-Asociados-1381805795169937"
+        role="button"
+        style="background-color: #3b5998;"
+        mdbRipple
+        >
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+  <div class="banner">
+    <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+      <mdb-carousel-item>
+        <img
+          src="./../../assets/banner/asesoria.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Asesoría</h5>
+          <p>Te ayudamos a crecer tu empresa con los profesionistas más preparados en los ámbitos jurídico, contable, fiscal y arquitectónico.</p>
+        </div>
+      </mdb-carousel-item>
+      <mdb-carousel-item>
+        <img
+          src="./../../assets/banner/slide-11.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Soluciones</h5>
+          <p>Atendemos los problemas de tu empresa para apoyarla en su crecimiento.</p>
+        </div>
+      </mdb-carousel-item>
+      <mdb-carousel-item>
+        <img
+          src="./../../assets/banner/slide-3_0.jpg"
+          class="d-block w-100"
+          alt="..."
+        />
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Confianza</h5>
+          <p>Somos un corporativo mexicano con 13 años de experiencia, nuestro compromiso es superar expectativas</p>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
+  </div>
+  <div class="my-5 py-5 container" >
+    <div class="row">
+      <div class="col-md-4 text-center" >
+        <img src="../../assets/logo.png" alt="">
+      </div>
+      <div class="col-md-8">
+        <p> Mendoza Toledo y Asociados, S.C. Es una empresa 100% Mexicana, cuenta con más de 13 años de experiencia exitosa en el mercado; siendo uno de sus principales objetivos mantener una alta calidad en los servicios prestados con precios accesibles que ayuden a sus clientes a lograr sus objetivos planteados</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- cuerpo -->
+<div class="my-5 py-5 container" >
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./../../assets/fotos/abogado.jpg" class="card-img-top" alt="division juridica"/>
+        <div class="card-body">
+          <img src="./../../assets/botones/m_juri.png" alt="">
+          <p class="card-text">En Mendoza Toledo y Asociados S.C., estamos comprometidos con nuestros clientes para ayudarlos ha solucionar sus situaciones jurídicas. Somos una firma que se encuentra en constante estudio de los</p>
+          <a [routerLink]="['/juridico']" class="btn btn-tertiary">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./../../assets/fotos/126-1.jpg" class="card-img-top" alt="division contable"/>
+        <div class="card-body">
+          <img src="./../../assets/botones/m_conta.png" alt="">
+          <p class="card-text">Contabilidad en el concepto más amplio se define como:Control y registro de los ingresos, compras, gastos y demás operaciones económicas que realiza una empresa o entidad.En la actualidad, de forma</p>
+          <a [routerLink]="['/contable']" class="btn btn-tertiary">Ver más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <img src="./../../assets/fotos/1013-2.jpg" class="card-img-top" alt="division arquitectira"/>
+        <div class="card-body">
+          <img src="./../../assets/botones/m_arquis.png" alt="">
+          <p class="card-text">Mendoza Toledo y Asociados, S.C. Es una empresa 100% Mexicana, cuenta con más de 13 años de experiencia exitosa en el mercado; siendo uno de sus principales objetivos mantener una alta calidad en los</p>
+          <a [routerLink]="['/arquitectura']" class="btn btn-tertiary">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

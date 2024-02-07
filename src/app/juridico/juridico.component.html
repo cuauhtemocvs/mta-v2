@@ -1,0 +1,273 @@
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./../../assets/logos/juri.png"
+            height="50"
+            alt=""
+            loading="lazy"
+          />
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-controls="#picker-editor" [routerLink]="['']">
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-controls="#picker-editor" (click)="scrollToElement(quienesSomos)">
+              ¿Quiénes somos?
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-controls="#picker-editor" (click)="scrollToElement(servicios)">
+              Servicios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-controls="#picker-editor" (click)="scrollToElement(contacto)">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <a
+          class="btn text-white btn-floating"
+          href="https://www.facebook.com/Mendoza-Toledo-y-Asociados-1381805795169937"
+          role="button"
+          style="background-color: #3b5998;"
+          mdbRipple
+          >
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+    <div class="banner">
+      <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+        <mdb-carousel-item>
+          <img
+            src="./../../assets/banner/asesoria.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Asesoría</h5>
+            <p>Te ayudamos a crecer tu empresa con los profesionistas más preparados en los ámbitos jurídico, contable, fiscal y arquitectónico.</p>
+          </div>
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img
+            src="./../../assets/banner/slide-11.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Soluciones</h5>
+            <p>Atendemos los problemas de tu empresa para apoyarla en su crecimiento.</p>
+          </div>
+        </mdb-carousel-item>
+        <mdb-carousel-item>
+          <img
+            src="./../../assets/banner/slide-3_0.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Confianza</h5>
+            <p>Somos un corporativo mexicano con 13 años de experiencia, nuestro compromiso es superar expectativas</p>
+          </div>
+        </mdb-carousel-item>
+      </mdb-carousel>
+    </div>
+  
+    <!-- Container for demo purpose -->
+<div class="container my-5 py-5" >
+
+    <!-- Section: Design Block -->
+    <section class="" #quienesSomos>
+      <style>
+        @media (min-width: 992px) {
+          #cta-img-nml-50 {
+            margin-left: 50px;
+          }
+        }
+      </style>
+  
+      <div class="row gx-0">
+        <div class="col-lg-5 mb-4 mb-md-0">
+          <div class="d-flex py-md-5">
+            <img
+                 src="./../../assets/contable/126-1.jpg"
+                 class="w-100 rounded-5 shadow-3-strong"
+                 id="cta-img-nml-50"
+                 style="z-index: 10"
+                 alt=""
+                 />
+          </div>
+        </div>
+  
+        <div class="col-lg-7 mb-4 mb-md-0">
+          <div
+               class="back-juridico h-100 rounded-6 p-4 ps-lg-5 text-white d-flex align-items-center"
+               >
+            <div class="ps-lg-5">
+              <h1 class="fw-bold mb-4">Jurídico</h1>
+              <div class=""><div class=""><div class=""><p>En Mendoza Toledo y Asociados S.C., estamos comprometidos con nuestros clientes para ayudarlos ha solucionar sus situaciones jurídicas.</p>
+                <p>Somos una firma que se encuentra en constante estudio de los cambios en las leyes y la normatividad, en todas las aéreas de impacto legal.&nbsp;</p>
+                <p>Está integrado en su división jurídica, por personas que llevan más de 13 años de experiencia en áreas Mercantil, laborar, administrativo, familiar, corporativo, fiscal, civil, tanto en el ámbito nacional como internacional, algunos catedráticos de la UNAM.&nbsp;</p>
+                <p>El despacho fue formado desde Octubre de 2004, contamos con amplia experiencia en el sector publico como el IMSS y en áreas corporativas.</p>
+                <p>&nbsp;</p>
+                <p><span style="font-size: large;"><em>Nuestro compromiso es superar sus expectativas</em></span></p>
+                <p>&nbsp;</p>
+                <h3>VISIÓN</h3>
+                <p>Ser el asesor de negocios nacional mas buscado por la excelencia, innovación, adaptabilidad, rapidez y asertividad en los servicios prestados, reconocidos por tener descartado el artificio con los clientes, ser calificado por nuestra calidez humana para así contribuir a nuestra comunidad; en las ramas de arquitectura, contaduría y abogacía.</p>
+                <p>&nbsp;</p>
+                <h3>MISIÓN</h3>
+                <p>&nbsp;Somos asesores integrales en áreas contables, arquitectónicas y jurídicas, que se dedican a superar las expectativas de nuestros clientes; coadyuvamos al crecimiento de estos, abasteciéndolos de soluciones eficientes y eficaces para cualquier asunto que involucre nuestro campo de acción</p>
+                </div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Container for demo purpose -->
+<!-- Container for demo purpose only -->
+<div class="gris">
+
+ <div class="container my-5 py-5 servicios" #servicios >
+    <section class="text-center">
+
+      <h3 class="mb-5">Servicios</h3>
+    
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <p class="h5">MATERIA MERCANTIL</p>
+          <hr class="hr" />
+            <p class="descripcion">
+                Toda controversia que refiera a un acto de comercio, es decir que cumpla con las tres características de este o alguna de ellas como lo son: realizarse entre comerciantes o un comerciante y un particular, el objeto este dentro del comercio o que hay una especulación comercial. Como lo es un pagare, letra de cambio, cheque, contratos mercantiles.
+            </p>
+          <!-- <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init (click)="openModal('auditoria')">Leer más</button> -->
+        </div>
+  
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-users"></i>
+          </div>
+          <p class="h5">MATERIA FAMILIAR</p>
+          <hr class="hr" />
+          <p class="descripcion">Serán analizadas aquellas controversias que versen en el orden familiar es decir, que refieran a un matrimonio, divorcio, separación de bienes, régimen de visitas, pensión alimenticia, sucesiones (testamentos o herencias sin testamento)</p>
+        </div>
+  
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p class="h5">MATERIA LABORAL</p>
+          <hr class="hr" />
+          <p class="descripcion">Aquellas controversias que refieran a salvaguardar los derechos obreros patronales como se refiere: a un despido, liquidación, renuncia, riesgos de trabajo</p>
+          <!-- <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init (click)="openModal('fiscales')">Leer más</button> -->
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-book"></i>
+          </div>
+          <p class="h5">MATERIA CIVIL</p>
+          <hr class="hr" />
+          <p class="descripcion">Las que refieren a situaciones jurídicas entre particulares como lo son los contratos de compraventa, prestación de servicios profesionales, arrendamiento, mutuo, comodato, al igual que hablar de un registro civil, patrimonio, bienes muebles o inmuebles</p>
+        </div>
+  
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="far fa-building"></i>
+          </div>
+          <p class="h5">CORPORATIVO</p>
+          <hr class="hr" />
+          <p class="descripcion">Hace referencia a la constitución de empresas su análisis jurídico fiscal y financiero, donde podemos enumera la sociedad anónima, sociedad de responsabilidad limitadas, sociedad por acciones simplificadas. También incluye las actas de asamblea la gestoría ante notario, protocolizaciones.</p>
+          <!-- <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init (click)="openModal('contables')">Leer más</button> -->
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="shadow-2 d-flex align-items-center justify-content-center rounded-circle mx-auto"
+            style="width: 80px; height: 80px;">
+            <i class="fas fa-gavel"></i>
+          </div>
+          <p class="h5">Gestorías ante notario en el Edo. de México y CDMX</p>
+          <hr class="hr" />
+          <p class="descripcion">
+            TESTAMENTOS, ESCRITURAS, FE DE HECHOS, PROTOCOLIZACIONES, CONSTITUCIÓN DE EMPRESAS, ETC. 
+          </p>
+          <!-- <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init (click)="openModal('contables')">Leer más</button> -->
+        </div>
+      </div>
+  
+    </section>
+  </div>
+</div>
+<div class="container my-5 py-5" #contacto>
+
+    <!-- Section: Design Block -->
+    <section class="">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3 class="mb-5 pb-3">Contacto</h3>
+        </div>
+      </div>
+      <div class="row gx-md-5">
+        <div class="col-md-6 col-xl-5 position-relative ms-auto">
+          <div class="pane-content">
+            <p>No hay nada más importante para nosotros que nuestros clientes, estamos a su servicio.</p>
+            <p>Mendoza Toledo y Asociados<br>
+              Dirección 1: <br><br>
+              Avenida 5, No.319 planta alta, Granjas San Antonio, Ciudad de México<br>
+              09070 Ciudad de México, CDMX<br>
+              <br><br>
+              Dirección 2: <br><br>
+              B. Gabón 77, Bosques de Aragon, Nezahualcóyotl<br>
+              57170 Nezahualcóyotl, MEX
+            </p>
+            <p>Teléfono: <a href="tel:+525557940696">57940696</a><br><br>
+              E-mail: <a href="contacto@corporativo-mta.com"></a></p>
+          </div>
+          <div class="vr vr-blurry position-absolute my-0 h-100 d-none d-md-block top-0 end-0"></div>
+        </div>
+        <div class="col-md-6 col-xl-5 position-relative me-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-outline" data-mdb-input-init>
+                <input type="text" id="nombre" class="form-control mb-4" />
+                <label class="form-label" for="nombre">Nombre</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-outline" data-mdb-input-init>
+                <input type="email" id="email" class="form-control mb-4" />
+                <label class="form-label" for="email">Email</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-outline mb-4" data-mdb-input-init>
+            <textarea class="form-control" id="mensaje" rows="4"></textarea>
+            <label class="form-label" for="mensaje">Mensaje</label>
+          </div>
+          <button class="btn btn-outline-dark btn-rounded" type="submit" data-mdb-ripple-init>Enviar</button>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  
+  </div>
+  <!-- Container for demo purpose only -->
